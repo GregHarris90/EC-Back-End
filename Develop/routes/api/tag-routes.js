@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
       ]
     });
 
-    // send all categories (include product & product-tag)
+    // send all tags (include product & product-tag)
     res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
@@ -51,7 +51,7 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'No tag found with this id!' });
     }
 
-    // send all categories (include product & product-tag)
+    // send all tags (include product & product-tag)
     res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
@@ -64,7 +64,7 @@ router.post('/', async (req, res) => {
     // create a new tag
     const tagData = await Tag.create(req.body);
 
-    // send created category
+    // send created tag
     res.status(200).json(tagData);
   } catch (err) {
     res.status(400).json(err);
@@ -93,8 +93,28 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-router.delete('/:id', (req, res) => {
-  // delete on tag by its `id` value
+// DELETE a tag
+router.delete('/:id', async (req, res) => {
+  try {
+    // delete on tag by its `id` value
+
+    const tagData = await Tag.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+
+    // if not selected tag send 404 message
+    if (!tagData) {
+      res.status(404).json({ message: 'No tag found with this id!' });
+      return;
+    }
+
+    // send deleted tag
+    res.status(200).json(tagData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 module.exports = router;

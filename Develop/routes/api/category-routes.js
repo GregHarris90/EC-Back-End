@@ -22,7 +22,21 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
+  // try {
+  //   const categoryData = await Category.findOne(req.params.id, {
+  //     include: [
+  //       {
+  //         model: Product,
+  //         attributes: ['product_name']
+  //       }
+  //     ]
+  //   })
+    
+  // } catch (err) {
+  //   res.status(500).json(err);
+    
+  // }
   // find one category by its `id` value
   // be sure to include its associated Products
 });

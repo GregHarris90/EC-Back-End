@@ -44,18 +44,19 @@ router.get('/:id', async (req, res) => {
       ]
     });
 
+    // if not selected product send 404 message
     if (!productData) {
       res.status(404).json({ message: 'No product found with this id!' });
     }
 
+    // send one product (include category & tag)
     res.status(200).json(productData);
-
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-// create new product
+// CREATE a product
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
@@ -87,7 +88,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product
+// UPDATE product
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -129,8 +130,26 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
+router.delete('/:id', async (req, res) => {
+  try {
+    // delete one product by its `id` value
+    const productData = await Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+
+    // if not selected product send 404 message
+    if (!productData) {
+      res.status(404).json({ message: 'No product found with this id!' });
+      return;
+    }
+
+    // send deleted category
+    res.status(200).json(productData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

@@ -15,10 +15,9 @@ router.get('/', async (req, res) => {
           attributes: ['id','product_name', 'price', 'stock', 'category_id']
         },
       ]
-    },
-    );
+    });
 
-    // send all categories
+    // send all categories (include product)
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
@@ -44,7 +43,7 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'No category found with this id!' });
     }
 
-    // send one category 
+    // send one category (include product)
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);

@@ -66,8 +66,7 @@
 
 *GET ALL Categories shows NEW Category*
 
-![Post-categories2](https://user-images.githubusercontent.com/73864182/112742483-d5f33a00-8f43-11eb-90ee-a07eb391a086.
-png)
+![Post-categories2](https://user-images.githubusercontent.com/73864182/112742821-b3165500-8f46-11eb-8191-080f6b1e97bf.png)
 
 *PUT request to UPDATE by id*
 

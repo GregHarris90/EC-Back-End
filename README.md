@@ -7,7 +7,7 @@
 * [Repository](#Repository) 
 * [Technology Used](#Technology-Used) 
 * [User Story](#User-Story)
-* [Terminal Application](#Terminal-Application)
+* [Main Application](#Main-Application)
 * [Contact Info](#Contact-Info)
 * [Conclusion](#Conclusion)
 
@@ -28,7 +28,7 @@
 
 # EC-Back-End-Application
 
-### Terminal-Application
+### Main-Application
 
 *IMAGES BELOW*
 

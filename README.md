@@ -21,7 +21,7 @@ https://drive.google.com/file/d/1WwJRivMsIEmRUYwLaljGx20pjgtHb9z7/view?usp=shari
 
 # Technology-Used
 
-- To build this project I used Sequelize and mySQL to build and connect a database to the provided code for the front of this E-Commerce application. Once the routes were set up and the database was seeded with relevant information I then used Insomnia to ensure that everything was working and properly running. 
+- To build this project I used Sequelize and mySQL to build and connect a database to the provided code for this E-Commerce application. Once the routes were set up and the database was seeded with relevant information I then used Insomnia to ensure that everything was working and properly running. 
 
 # User-Story
 

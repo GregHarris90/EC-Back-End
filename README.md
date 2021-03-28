@@ -50,7 +50,7 @@
 
 *GET ALL Tags*
 
-![GA-tags](https://user-images.githubusercontent.com/73864182/112742497-d8559400-8f43-11eb-88d0-e6c9cd67af09.png)
+![GA-tags](https://user-images.githubusercontent.com/73864182/112742785-62066100-8f46-11eb-810a-e1e26cdca4dd.png)
 
 *GET a Tag by id*
 

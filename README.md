@@ -13,18 +13,18 @@
 
 # Repository
 
-- This repository is for 
+- This repository is for E-Commerce application to manage products, organized by their category and connected tags and product tags.
 
 *LINK TO DEMO VIDEO*
 
 
 # Technology-Used
 
-- 
+- To build this project I used Sequelize and mySQL to build and connect a database to the provided code for the front of this E-Commerce application. Once the routes were set up and the database was seeded with relevant information I then used Insomnia to ensure that everything was working and properly running. 
 
 # User-Story
 
-- 
+- With this application the user is able to GET products and their information from a connected database, and then POST new ones, PUT or update, and DELETE them. Below is a basic demonstration of this functionality!
 
 # EC-Back-End-Application
 
@@ -96,7 +96,7 @@
 
 ![Delete-categories3](https://user-images.githubusercontent.com/73864182/112742491-d7246700-8f43-11eb-866a-b563fc1880eb.png)
 
-*END OF APPLICATION*
+*END OF DEMO*
 
 # Contact-Info:
 
@@ -104,3 +104,5 @@
 - Email: ghart.productions@gmail.com
 
 # Conclusion
+
+- Overall this project was much more straight forward than the last one. I think it was partially due to the fact I started with provided code and that Sequelize made using a database much easier to understand and implement. I am turning in this project late, but wanted to make sure to get everything working so I could get a good grade. Thank you!

@@ -1,7 +1,5 @@
 # EC-Back-End
 
-*Homework assignment for Week 13 of Coding Bootcamp!*
-
 ### Table of Contents 
 
 * [Repository](#Repository) 
